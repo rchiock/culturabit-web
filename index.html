@@ -10,8 +10,8 @@
 
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Roboto:700,700italic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700italic,700,400italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<link href="css/styles.css" rel="stylesheet">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -151,7 +151,7 @@
 					</div>
 					<div class="row videos">
 						<div class="col-sm-9 col-xs-12">
-							<img src="images/cover-01.jpg" alt="" class="videos-image">
+							<img src="images/cover-01.jpg" alt="" class="videos-highlight">
 						</div>
 						<div class="col-sm-3 col-xs-12 videos-recent">
 							<h3>VIDEOS RECIENTES</h3>
@@ -347,30 +347,38 @@
 	<!-- Footer -->
 	<footer>
 		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					Lo Destacado
-				</div>
-				<div class="col-md-4">
-					
-				</div>
-				<div class="col-md-4">
-					Categorias
-				</div>
+			<div class="col-sm-6 col-xs-12 footer-highlights">
+				<h2>Lo Destacado</h2>
+				<ul class="highlights-list">
+					<li class="highlight-item"><img src="images/cover-01.jpg" alt=""><h3><a href="#">RWBY Grim Eclipse (PC)</a></h3></li>
+					<li class="highlight-item"><img src="images/cover-01.jpg" alt=""><h3><a href="#">RWBY Grim Eclipse (PC)</a></h3></li>
+					<li class="highlight-item"><img src="images/cover-01.jpg" alt=""><h3><a href="#">RWBY Grim Eclipse (PC)</a></h3></li>
+				</ul>
 			</div>
-			<div class="row">
-				<div class="col-sm-3">
-					<a class="navbar-brand" href="#">
-						<img alt="Brand" src="images/logo.png">
-					</a>
-				</div>
-				<div class="col-sm-5">
-					<h4>¿QUIÉNES SOMOS?</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit massa lectus, et volutpat nulla rutrum ac. Proin turpis justo, facilisis sit amet arcu ultricies.</p>
-				</div>
-				<div class="col-sm-4">
-					SÍGUENOS
-				</div>
+			<div class="col-sm-4 col-sm-offset-2 col-xs-12 footer-categories">
+				<h2>Categorias</h2>
+				<ul class="categories-list">
+					<li class="category-item"><a href="#">MANGA Y COMIC</a><span class="count">15</span></li>
+					<li class="category-item"><a href="#">CINE Y TELEVISIÓN</a><span class="count">15</span></li>
+					<li class="category-item"><a href="#">VIDEOJUEGOS</a><span class="count">15</span></li>
+					<li class="category-item"><a href="#">TECNOLOGÍA</a><span class="count">15</span></li>
+					<li class="category-item"><a href="#">LUCHA LIBRE</a><span class="count">15</span></li>
+					<li class="category-item"><a href="#">bitCAST</a><span class="count">15</span></li>
+					<li class="category-item"><a href="#">bitCHANNEL</a><span class="count">15</span></li>
+				</ul>
+			</div>
+			<div class="col-xs-10 col-xs-offset-1 divider"></div>
+			<div class="col-sm-3 col-xs-12 footer-brand">
+				<a href="#">
+					<img alt="Brand" src="images/logo.png">
+				</a>
+			</div>
+			<div class="col-sm-5 col-xs-12 footer-about">
+				<h3>¿QUIÉNES SOMOS?</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras suscipit massa lectus, et volutpat nulla rutrum ac. Proin turpis justo, facilisis sit amet arcu ultricies.</p>
+			</div>
+			<div class="col-sm-4 col-xs-12 footer-social">
+				SÍGUENOS
 			</div>
 		</div>
 	</footer>
