@@ -7,12 +7,12 @@ h4 { font-size: 1.2rem; font-weight: 400; }
 a, p, span { font-family: 'Open Sans'; font-weight: 400; line-height: 1.4; }
 
 /* Wrapper */
-.main-wrapper { background: #ffffff; padding: 20px 0 120px; }
+.main-wrapper { background: #f2f2f3; padding: 20px 0 120px; }
 .main-wrapper-cover { margin-top: 100px; }
 
 /* Widgets Title */
-.block-title { float: left; width: 100%; margin-bottom: 15px; border-bottom: 2px solid #3c3c3c; }
-.tab-title { background: #3C3C3C; float: left; padding: 0 10px; line-height: 2; color: #ffffff; }
+.block-title { background: url("../images/bg-tab.png") repeat-x left center; width: 100%; margin-bottom: 15px;  }
+.tab-title { background: #f2f2f3; display: inline-block; padding: 0 10px; border-left: 6px solid #28952B; line-height: 2; color: #28952B; }
 
 /* Background Cover */
 body { background-image: url("../bg/bg-swtfa.jpg"); background-position: center 160px; background-attachment: fixed; background-size: cover; background-repeat: none; }
@@ -79,11 +79,11 @@ body { background-image: url("../bg/bg-swtfa.jpg"); background-position: center 
 	.news-cover img { display: block; width: 100%; }
 
 
-/* Mews List */
+/* News List */
 .news-timeline { margin-bottom: 60px; }
 
 /* News Item */
-.news-item { margin-bottom: 30px; }
+.news-item { padding: 15px 0; margin: 15px 0; border-top: 1px solid #ffffff; border-bottom: 1px solid #b0b0b0; }
 .news-item .news-image { width: 100%; height: auto; }
 .news-item .news-title { text-align: left; line-height: 1.4; color: #393939; }
 .news-item .news-date { margin-bottom: 10px; font-size: 1.2rem; text-align: left; color: #999999; }
@@ -93,10 +93,10 @@ body { background-image: url("../bg/bg-swtfa.jpg"); background-position: center 
 }
 
 /* Video Widget */
-.videos { margin-bottom: 30px; }
+.videos { background: #333333; margin-bottom: 30px; }
 .videos .videos-highlight, .videos .videos-image { width: 100%; height: auto; }
-.videos .videos-highlight { margin-bottom: 30px; }
-.videos .videos-recent { background: #333333; padding: 10px 15px; color: #ffffff !important;}
+.videos .videos-highlight {  }
+.videos .videos-recent { padding: 10px 15px; color: #ffffff !important;}
 .videos .videos-recent h3, .videos .videos-recent h4 { margin-bottom: 10px; text-align: left; }
 .videos .videos-recent h3 { padding-bottom: 5px; border-bottom: 2px solid #ffffff; }
 .videos .videos-recent h4 { padding-bottom: 10px; border-bottom: 1px solid #ffffff; }
@@ -108,12 +108,12 @@ body { background-image: url("../bg/bg-swtfa.jpg"); background-position: center 
 .widget-thumb img { width: 100%; margin-bottom: 10px; }
 .widget-title { font-size: 1.6rem; text-align: left; color: #3a3a3a; }
 .widget-text { font-size: 14px; text-align: left; line-height: 1.6; color: #999999; }
-.widget-button { display: block; width: 50%; height: 32px; margin: 0 auto; border: 1px solid #999999; font-size: 16px; font-weight: bold; text-align: center; text-transform: uppercase; line-height: 2; }
+.widget-button { display: block; background: #28952B; width: 50%; height: 32px; margin: 0 auto; font-size: 1.6rem; font-weight: 400; text-align: center; text-transform: uppercase; line-height: 2; color: #ffffff; }
 
 
 /* Aside Social Widget */
 .aside-social {}
-.aside-social .social-widget { float: left; width: 100%; height: 32px; padding: 0 15px; margin-bottom: 15px; font-size: 14px; font-weight: bold; text-transform: uppercase; text-align: right; line-height: 2.28; color: #ffffff; }
+.aside-social .social-widget { float: left; width: 100%; height: 32px; padding: 0 15px; margin-bottom: 15px; font-size: 1,4rem; font-weight: bold; text-transform: uppercase; text-align: right; line-height: 2.28; color: #ffffff; }
 .social-widget:last-child { margin-bottom: 30px; }
 .aside-social .social-fa { background: #516eaa; }
 .aside-social .social-tw { background: #29c5f6; }
