@@ -5,6 +5,8 @@ h2 { font-size: 1.8rem; font-weight: 700; }
 h3 { font-size: 1.4rem; font-weight: 400; }
 h4 { font-size: 1.2rem; font-weight: 400; }
 a, p, span { font-family: 'Open Sans'; font-weight: 400; line-height: 1.4; }
+p, span { font-family: 'Open Sans'; }
+a { font-family: inherit; }
 
 
 /* Wrapper */
@@ -19,17 +21,17 @@ a, p, span { font-family: 'Open Sans'; font-weight: 400; line-height: 1.4; }
 
 /* Buttons */
 .button-first { display: block; background: none; width: 50%; height: 32px; margin: 0 auto; border: 1px solid #99999c; font-family: 'Roboto', sans-serif; font-size: 1.6rem; font-weight: 700; text-align: center; text-transform: uppercase; line-height: 1.88; color: #99999c; cursor: pointer; }
-.button-first:hover { background: #28952b; border-color: #28952b; color: #ffffff; }
+.button-first:hover { background: #28952b; border-color: #28952b; color: #ffffff; box-shadow: 3px 3px 0 #146614; }
 
 
 /* Background Cover */
 body { background-image: url("../bg/bg-swtfa.jpg"); background-position: center 160px; background-attachment: fixed; background-size: cover; background-repeat: none; }
 @media screen and (max-width: 767px) {
-	body { background-position: center 120px; }
+	body { background-position: center 100px; }
 }
 .container-fixed { padding-top: 162px; }
 @media screen and (max-width: 767px) {
-	.container-fixed { padding-top: 122px; }
+	.container-fixed { padding-top: 100px; }
 }
 
 
@@ -46,10 +48,6 @@ body { background-image: url("../bg/bg-swtfa.jpg"); background-position: center 
 	/* Ocultar avisos de desktop en móviles */
 	.ad-top-728x90, .ad-middle-728x90, .ad-right-300x250 { display: none; }
 	.ad-middle-300x250 { display: block; width: 300px; margin: 0 auto 60px; }
-}
-@media screen and (max-width: 767px) {
-	/* Mostrar avisos de móviles*/
-	.ad-middle-300x250, .ad-right-300x250 { display: block; width: 300px; margin: 0 auto 60px; }
 }
 
 
@@ -72,8 +70,12 @@ body { background-image: url("../bg/bg-swtfa.jpg"); background-position: center 
 .navbar-default .navbar-nav > li > a { padding: 5px 15px 10px; color: #39393c; }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover { background: none; border-bottom: 4px solid #28952b; color: #28952b; }
 @media screen and (max-width: 767px) {	
-	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover { border-bottom: 1px solid #d9d9dc; }
-	.navbar-default .navbar-nav > li > a { padding: 15px; border-bottom: 1px solid #d9d9dc; }
+	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover { background: url("../images/div-horizontal.png") repeat-x left bottom; border: none; font-weight: 700; }
+	.navbar-default .navbar-nav > li > a { background: url("../images/div-horizontal.png") repeat-x left bottom; padding: 15px; }
+}
+.menu-credits { margin-top: 20px; font-size: 1.2rem; text-align: center; color: #99999c; }
+@media screen and (min-width: 768px) {
+	.menu-credits { display: none; }
 }
 
 
@@ -97,11 +99,10 @@ body { background-image: url("../bg/bg-swtfa.jpg"); background-position: center 
 @media screen and (min-width: 768px) and (max-width: 991px) {
 	.cover-big, .cover-small { margin-bottom: 20px; }
 }
-.cover-big .news-thumb, .cover-small .news-thumb { display: block; width: 100%; }
-.cover-big .cover-title, .cover-small .cover-title { background: rgba(0, 0, 0, 0.8); position: absolute; width: 80%; display: block; bottom: 30px; left: 15px; padding: 10px 15px; color: #ffffff !important; }
-.cover-big .cover-title { font-size: 1.8rem !important; }
-.cover-small .cover-title { font-size: 1.4rem !important; }
-.news-cover img { display: block; width: 100%; }
+.cover-big img, .cover-small img { display: block; width: 100%; }
+.cover-big .cover-title, .cover-small .cover-title { background: rgba(0, 0, 0, 0.55); position: absolute; width: 80%; display: block; left: 15px; padding: 10px 15px; color: #ffffff !important; }
+.cover-big .cover-title { bottom: 20px; font-size: 1.8rem !important; }
+.cover-small .cover-title { bottom: 22px; font-size: 1.4rem !important; }
 
 
 /* Main Content */
@@ -119,7 +120,8 @@ body { background-image: url("../bg/bg-swtfa.jpg"); background-position: center 
 @media screen and (max-width: 767px) {
 	.news-item .news-image { padding-right: 15px; }
 }
-.news-item .news-title { text-align: left; line-height: 1.4; color: #39393c; }
+.news-item .news-title { text-align: left; line-height: 1.4; }
+.news-item .news-title a { color: #39393c; }
 .news-item .news-date { margin-bottom: 10px; font-size: 1.2rem; text-align: left; color: #99999c; }
 .news-item .news-text { font-size: 1.4rem; line-height: 1.6; color: #99999c; }
 @media screen and (max-width: 767px) {
@@ -131,12 +133,13 @@ body { background-image: url("../bg/bg-swtfa.jpg"); background-position: center 
 /* Video Widget */
 .videos { background: #39393c; margin: 15px 0 30px; }
 .videos > div { padding: 0; }
-.videos .videos-highlight, .videos .videos-image { width: 100%; height: auto; }
-.videos .videos-image { margin-bottom: 15px; }
-.videos .videos-recent { padding: 10px 15px; color: #ffffff !important;}
-.videos .videos-recent h3, .videos .videos-recent h4 { margin-bottom: 10px; text-align: left; }
-.videos .videos-recent h3 { padding-bottom: 5px; border-bottom: 2px solid #ffffff; }
-.videos .videos-recent h4 { padding-bottom: 10px; border-bottom: 1px solid #ffffff; }
+.videos .video-highlight { display: block; width: 100%; }
+.videos .video-highlight img, .videos .video-thumb { width: 100%; height: auto; }
+.videos .video-highlight .highlight-title { background: rgba(0, 0, 0, 0.55); position: absolute; width: 80%; display: block; left: 0; bottom: 0; padding: 10px 15px; color: #ffffff !important; }
+.videos .video-thumb { margin-bottom: 15px; }
+.videos .videos-recent { padding: 10px 15px; color: #ffffff !important; }
+.videos .videos-recent h3 { padding-bottom: 7px; margin-bottom: 7px; border-bottom: 1px solid #ffffff; text-align: left; }
+.videos .videos-recent h3 a { color: #ffffff !important; }
 .videos .videos-recent .videos-button { font-size: 1.3rem; font-weight: 700; color: #ffffff !important; }
 
 
@@ -152,9 +155,11 @@ body { background-image: url("../bg/bg-swtfa.jpg"); background-position: center 
 .aside-social {}
 .aside-social .social-widget { float: left; width: 100%; height: 32px; padding: 0 15px; margin-bottom: 15px; font-size: 1,4rem; font-weight: bold; text-transform: uppercase; text-align: right; line-height: 2.28; color: #ffffff; }
 .social-widget:last-child { margin-bottom: 30px; }
-.aside-social .social-fa { background: #516eaa; }
-.aside-social .social-tw { background: #29c5f6; }
-.aside-social .social-yt { background: #e24e42; }
+.aside-social .social-fa { background: #3b5998; }
+.aside-social .social-tw { background: #55acee; }
+.aside-social .social-yt { background: #bb0000; }
+.aside-social .social-fa img, .aside-social .social-tw  img, .aside-social .social-yt img { float: left; margin: 2px 0;}
+.aside-social .social-fa a, .aside-social .social-tw  a, .aside-social .social-yt a { color: #ffffff !important; }
 
 
 /* Footer Styles */
@@ -173,14 +178,16 @@ footer .highlights-list .highlight-item:last-child { margin: 0; }
 .highlight-item h2 a { color: #ffffff !important; }
 footer .categories-list .category-item { margin-bottom: 10px; text-align: left; }
 footer .categories-list .category-item a { color: #ffffff !important; }
-footer .footer-social .social-item { margin: 0 10px; }
 footer .categories-list .category-item .count { float: right; text-align: right; }
-footer .footer-about { margin-bottom: 30px; text-align: left; }
+footer .footer-social, footer .footer-about { margin-bottom: 30px; text-align: left; }
+footer .footer-social .social-item { margin-right: 10px; }
 footer .footer-about h3 { margin-bottom: 15px; }
 @media screen and (max-width: 767px) {
 	footer .footer-brand img { display: block; margin: 0 auto 30px; }
 	footer .footer-about, footer .footer-social { text-align: center; }
+	footer .footer-social .social-item { margin: 0 10px; }
 }
+footer .footer-credits { font-size: 1rem; text-align: center; color: #c9c9cc; }
 
 
 
