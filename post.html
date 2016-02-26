@@ -65,20 +65,18 @@
 				<div class="latest-title">
 					<h2>Lo último</h2>
 				</div>
-				<div class="row">
-					<div class="col-xs-12 widget-thumb">
+					<div class="widget-thumb">
 						<a href="#"><img src="images/cover-01.jpg" alt=""></a>
 						<h3 class="widget-title"><a href="#">bitCast Ep006</a></h3>
 					</div>
-					<div class="col-xs-12 widget-thumb">
+					<div class="widget-thumb">
 						<a href="#"><img src="images/cover-01.jpg" alt=""></a>
 						<h3 class="widget-title"><a href="#">bitCast Ep005</a></h3>
 					</div>
-					<div class="col-xs-12 widget-thumb">
+					<div class="widget-thumb">
 						<a href="#"><img src="images/cover-01.jpg" alt=""></a>
 						<h3 class="widget-title"><a href="#">bitCast Ep004</a></h3>
 					</div>
-				</div>
 			</div>
 			<div class="main-wrapper wrapper-post">
 				<ol class="breadcrumb">
@@ -326,5 +324,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/fixto.js"></script>
+	<script>
+		$(function(){
+			$('.aside-latest').fixTo('body');
+		});
+	</script>
 </body>
 </html>

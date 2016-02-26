@@ -208,6 +208,8 @@ a { font-family: inherit; }
 @media screen and (max-width: 990px) {
 	.aside-latest { display: none; }
 }
+.latest-title { background: #e9e9ec; padding: 0 5px; color: #39393c; }
+.aside-latest .widget-title a { color: #ffffff; }
 
 /* Widgets Styles */
 .aside-widget { float: left; margin: 30px 0; }
