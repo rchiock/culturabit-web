@@ -199,17 +199,20 @@ a { font-family: inherit; }
 .post-content p a { font-weight: 700; color: #28952b; }
 .post-content p.quote { font-family: 'Roboto', sans-serif; font-size: 2.8rem; font-weight: 700; font-style: italic; text-align: center; line-height: 1.2; color: #28952b; }
 .post-content p.caption { margin-top: 10px; font-size: 1.2rem; font-weight: 400; font-style: italic; color: #69696c; }
-.post-content .post-tags { padding-bottom: 30px; margin: 30px 0; border-bottom: 1px solid #c9c9cc; font-family: 'Open Sans', sans-serif; }
+.post-review { background-position: top left; background-repeat: no-repeat; background-size: cover; height: 300px; }
+.post-review .post-calification { background: #ff0000; position: absolute; width: 100px; height: 100px; border-radius: 50px; margin-top: 250px; border: 5px solid #ffffff; font-size: 3rem; text-align: center; line-height: 90px; }
+.post-tags { padding-bottom: 30px; margin: 30px 0; border-bottom: 1px solid #c9c9cc; font-family: 'Open Sans', sans-serif; }
 .tags-list { display: inline-block; padding: 0; margin: 0; list-style: none; }
 .tag-item { background: #39393c; display: inline-block; height: 24px; padding: 0 5px; margin-left: 10px; font-size: 1.2rem; font-weight: 700; line-height: 24px; }
 .tag-item:hover { background: #28952b; }
 .tag-item a { color: #ffffff; }
-.aside-latest { background: #ff0000; position: fixed; width: 150px; height: 100px; margin: 20px -165px 0 0; }
+.aside-latest { float: left; width: 150px; padding: 20px 0 60px; margin-right: -165px; }
 @media screen and (max-width: 990px) {
 	.aside-latest { display: none; }
 }
-.latest-title { background: #e9e9ec; padding: 0 5px; color: #39393c; }
-.aside-latest .widget-title a { color: #ffffff; }
+.aside-latest .latest-title { background: #28952B; padding: 5px 10px; color: #ffffff; }
+.aside-latest .latest-title::after { content:''; position: absolute; width: 0; height: 0; margin-top: 5px; border-left: 12px solid transparent; border-right: 12px solid transparent; border-top: 12px solid #28952B; }
+.aside-latest .widget-title a, .aside-latest .widget-title a:hover, .aside-latest .widget-title a:focus { font-size: 1.4rem; color: #ffffff; }
 
 /* Widgets Styles */
 .aside-widget { float: left; margin: 30px 0; }
