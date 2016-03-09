@@ -7,7 +7,8 @@ h4 { font-size: 1.2rem; }
 a, p, span { font-family: 'Open Sans'; font-weight: 400; line-height: 1.4; }
 p, span { font-family: 'Open Sans'; }
 a { font-family: inherit; }
-
+.color-first { color: #28952b; }
+.color-comp { color: #ff3d2e; }
 
 /* Wrapper */
 .main-wrapper { background: #e9e9ec; float: right; clear: right; padding: 20px 0 120px; }
@@ -23,22 +24,16 @@ a { font-family: inherit; }
 
 
 /* Buttons */
-.button-first { display: block; background: none; width: 50%; height: 32px; margin: 0 auto; border: 1px solid #c9c9cc; font-family: 'Roboto', sans-serif; font-size: 1.6rem; font-weight: 700; text-align: center; text-transform: uppercase; line-height: 1.88; color: #69696c; cursor: pointer; }
+.button-first { display: block; background: none; width: 60%; height: 32px; margin: 0 auto; border: 1px solid #c9c9cc; font-family: 'Roboto', sans-serif; font-size: 1.6rem; font-weight: 700; text-align: center; text-transform: uppercase; line-height: 1.88; color: #69696c; cursor: pointer; }
 .button-first:hover { background: #28952b; border-color: #28952b; color: #ffffff; box-shadow: 0 3px #146614; }
 
 
 /* Index and Page Cover */
-.main-body { background-position: center 160px; background-attachment: fixed; background-size: cover; background-repeat: no-repeat; }
+.main-body { background-color: #19191c; background-position: center 60px; background-attachment: fixed; background-size: cover; background-repeat: no-repeat; }
 .body-index { background-image: url('../bg/bg-swtfa.jpg'); }
 .body-category { background-image: url('../bg/bg-manga.jpg'); }
 .body-post { background-color: #19191c; }
-@media screen and (max-width: 767px) {
-	.main-body { background-position: center 100px; }
-}
-.container-fixed { padding-top: 162px; }
-@media screen and (max-width: 767px) {
-	.container-fixed { padding-top: 100px; }
-}
+.container-fixed { padding-top: 60px; }
 .category-cover { background: rgba(0, 0, 0, 0.6); height: 200px; }
 .category-cover .category-title { font-size: 2.8rem; font-weight: 400; text-align: center; line-height: 148px; color: #ffffff; }
 @media screen and (max-width: 767px) {
@@ -49,41 +44,40 @@ a { font-family: inherit; }
 
 /* Avisos */
 .ad-right-300x250 { width: 300px; margin: 0 auto 30px; }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
 	/* Mostrar avisos de desktop */
-	.ad-top-728x90 { float: right; width: 728px; padding: 15px 0; }
+	.ad-top-728x90 { width: 728px; padding: 15px 0; margin: 0 auto; }
 	.ad-middle-728x90 { width: 728px; margin: 0 auto 60px; }
 	/* Ocultar avisos de móviles en desktop */
-	.ad-middle-300x250 { display: none; }
+	.ad-top-300x100, .ad-middle-300x250 { display: none; }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
 	/* Ocultar avisos de desktop en móviles */
 	.ad-top-728x90, .ad-middle-728x90, .ad-right-300x250 { display: none; }
+	/* Mostrar avisos de móviles */
+	.ad-top-300x100 { display: block; width: 300px; margin: 30px auto; }
 	.ad-middle-300x250 { display: block; width: 300px; margin: 0 auto 60px; }
 }
 
 
 /* NavBar */
-.navbar { position:fixed; top: 0; width: 100%; margin: 0; z-index: 1000; }
-@media screen and (min-width: 768px) {
-	.navbar { border-radius: 0; }
+.navbar { position:fixed; top: 0; width: 100%; margin: 0; border-radius: 0; z-index: 1000; }
+.navbar-default { background: #39393c; border: none; box-shadow: 0 3px 4px rgba(0, 0, 0, 0.35); }
+.navbar-default .navbar-toggle { background: none !important; height: 30px; padding: 0 !important; margin: 15px 15px 15px 0; border: none; font-size: 3rem; line-height: 1; color: #ffffff; }
+.navbar-brand { height: 50px; padding: 0; margin: 5px 15px; }
+@media (min-width: 768px) {
+	.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand { margin-left: 0; }
 }
-.navbar-default { background: #ffffff; border: none; box-shadow: 0 3px 4px rgba(0, 0, 0, 0.35); }
-.navbar-default .navbar-toggle { background: none !important; padding: 0 !important; margin: 37px 15px 37px 0; border: none; }
-.navbar-default .navbar-toggle .icon-bar { background: #28952b; width: 32px; height: 6px; }
-.navbar-brand { height: auto; }
+.navbar-brand img { height: 100%; }
+.navbar-default .navbar-collapse { float: left; padding: 0; font-family: 'Roboto', sans-serif; font-size: 1.4rem; line-height: 1.43; }
 @media screen and (max-width: 767px) {
-	.navbar-brand img { height: 70px; }
+	.navbar-default .navbar-collapse { background: #e9e9ec; width: 100%; height: 640px; padding: 0 15px; box-sizing: content-box; }
 }
-.navbar-default .navbar-collapse { float: left; width: 100%; padding: 0; font-family: 'Roboto', sans-serif; font-size: 1.4rem; line-height: 1.43; }
-@media screen and (max-width: 767px) {
-	.navbar-default .navbar-collapse { background: #e9e9ec; height: 640px; padding: 0 15px; box-sizing: content-box; }
-}
-.navbar-default .navbar-nav > li > a { padding: 5px 15px 10px; color: #39393c; }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover { background: none; border-bottom: 4px solid #28952b; color: #28952b; }
+.navbar-default .navbar-nav > li > a { height: 60px; padding: 5px 14px 10px; line-height: 56px; color: #ffffff; }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover { background: none; border-bottom: 4px solid #ff3d2e; color: #ff3d2e; }
 @media screen and (max-width: 767px) {	
 	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover { background: url('../images/div-horizontal.png') repeat-x left bottom; border: none; font-weight: 700; }
-	.navbar-default .navbar-nav > li > a { background: url('../images/div-horizontal.png') repeat-x left bottom; padding: 15px; }
+	.navbar-default .navbar-nav > li > a { background: url('../images/div-horizontal.png') repeat-x left bottom; padding: 15px; line-height: 30px; color: #ff3d2e; }
 }
 .menu-credits { margin-top: 20px; font-size: 1.2rem; text-align: center; color: #99999c; }
 @media screen and (min-width: 768px) {
@@ -119,19 +113,13 @@ a { font-family: inherit; }
 
 
 /* Cover */
-.news-cover { float: left; width: 100%; }
+.news-cover { width: 100%; margin-bottom: 60px; }
+.cover-grid > div { padding: 0; border-right: 1px solid #e9e9ec; border-bottom: 1px solid #e9e9ec; border-left: 1px solid #e9e9ec; }
 .cover-big, .cover-small { width: 100%; }
-.cover-small { margin-bottom: 22px; }
-@media screen and (max-width: 767px) {
-	.cover-big, .cover-small { margin-bottom: 20px; }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-	.cover-big, .cover-small { margin-bottom: 20px; }
-}
 .cover-big img, .cover-small img { display: block; width: 100%; }
-.cover-big .cover-title, .cover-small .cover-title { background: rgba(0, 0, 0, 0.55); position: absolute; width: 80%; display: block; left: 15px; padding: 10px 15px; color: #ffffff !important; }
-.cover-big .cover-title { bottom: 20px; font-size: 1.8rem !important; }
-.cover-small .cover-title { bottom: 22px; font-size: 1.4rem !important; }
+.cover-big .cover-title, .cover-small .cover-title { background: rgba(0, 0, 0, 0.55); position: absolute; width: 100%; display: block; bottom: 0; left: 0; padding: 10px 15px; color: #ffffff !important; }
+.cover-big .cover-title { font-size: 1.8rem !important; }
+.cover-small .cover-title { font-size: 1.4rem !important; }
 
 
 /* Main Content */
@@ -149,7 +137,7 @@ a { font-family: inherit; }
 @media screen and (max-width: 767px) {
 	.news-item .news-image { padding-right: 15px; }
 }
-.news-item .news-title { text-align: left; line-height: 1.4; }
+.news-item .news-title { font-size: 1.6rem; text-align: left; line-height: 1.4; }
 .news-item .news-title a { font-weight: 700; color: #39393c; }
 .news-item .news-title a:hover { color: #28952b; }
 .news-item .news-date { margin-bottom: 10px; font-size: 1.2rem; text-align: left; color: #99999c; }
@@ -165,12 +153,13 @@ a { font-family: inherit; }
 .videos > div { padding: 0; }
 .videos .video-highlight { display: block; width: 100%; }
 .videos .video-highlight img, .videos .video-thumb { width: 100%; height: auto; }
-.videos .video-highlight .highlight-title { background: rgba(0, 0, 0, 0.55); position: absolute; width: 80%; display: block; left: 0; bottom: 0; padding: 10px 15px; color: #ffffff !important; }
+.videos .video-highlight .highlight-title { background: rgba(0, 0, 0, 0.55); position: absolute; width: 100%; display: block; left: 0; bottom: 0; padding: 10px 15px; color: #ffffff !important; }
 .videos .video-thumb { margin-bottom: 15px; }
 .videos .videos-recent { padding: 10px 15px; color: #ffffff !important; }
 .videos .videos-recent h3 { padding-bottom: 7px; margin-bottom: 7px; border-bottom: 1px solid #ffffff; text-align: left; }
-.videos .videos-recent h3 a { color: #ffffff !important; }
-.videos .videos-recent .videos-button { font-size: 1.3rem; font-weight: 700; color: #ffffff !important; }
+.videos .videos-recent h3 a { color: #ffffff; }
+.videos .videos-recent .videos-button { font-size: 1.3rem; font-weight: 700; color: #ffffff; }
+.videos .videos-recent h3 a:hover, .videos .videos-recent .videos-button:hover { color: #ff3d2e; }
 
 
 /* Post Styles */
@@ -212,7 +201,9 @@ a { font-family: inherit; }
 .post-review .review-details h3 { font-size: 2.4rem; padding-bottom: 5px; margin-bottom: 15px; border-bottom: 1px solid #880c0c; }
 .review-details .review-up { float: left; width: 47.5%; margin-right: 2.5%; border-right: 1px solid #880c0c; }
 .review-details .review-down { float: right; width: 50%; }
-.review-details .review-up ul, .review-details .review-down ul { padding: 0; margin: 10px 0 0; list-style-position: inside; list-style-type: square }
+.review-details .review-up ul, .review-details .review-down ul { padding: 0; margin: 10px 0 0; list-style-position: inside; list-style-type: none }
+.review-details .review-up li, .review-details .review-down li { line-height: 24px; }
+.review-details .review-up li span, .review-details .review-down li span { margin-right: 10px; vertical-align: text-top }
 @media screen and (max-width: 767px) {
 	.review-details .review-up, .review-details .review-down { float: none; width: 100%; }
 	.review-details .review-up { padding-bottom: 10px; margin-bottom: 10px; border-right: none; border-bottom: 1px solid #880c0c; }
