@@ -8,7 +8,7 @@ a, p, span { font-family: 'Open Sans'; font-weight: 400; line-height: 1.4; }
 p, span { font-family: 'Open Sans'; }
 a { font-family: inherit; }
 .color-first { color: #28952b; }
-.color-comp { color: #ff3d2e; }
+.color-comp { border-color: #ff3d2e !important; color: #ff3d2e !important; }
 
 /* Wrapper */
 .main-wrapper { background: #e9e9ec; float: right; clear: right; padding: 20px 0 120px; }
@@ -20,12 +20,13 @@ a { font-family: inherit; }
 
 /* Widgets Title */
 .block-title { background: url('../images/div-horizontal.png') repeat-x left center; width: 100%; margin-bottom: 15px;  }
-.tab-title { background: #e9e9ec; display: inline-block; padding: 0 10px; border-left: 4px solid #28952B; font-size: 1.6rem !important; line-height: 2; color: #28952b; }
+.tab-title { background: #e9e9ec; display: inline-block; padding: 0 10px; border-left: 4px solid #28952B; font-size: 1.6rem !important; font-weight: 700; line-height: 2; color: #28952b; }
 
 
 /* Buttons */
-.button-first { display: block; background: none; width: 60%; height: 32px; margin: 0 auto; border: 1px solid #c9c9cc; font-family: 'Roboto', sans-serif; font-size: 1.6rem; font-weight: 700; text-align: center; text-transform: uppercase; line-height: 1.88; color: #69696c; cursor: pointer; }
+.button-first, .button-second { display: block; background: none; width: 60%; height: 32px; margin: 0 auto; border: 1px solid #c9c9cc; font-family: 'Roboto', sans-serif; font-size: 1.6rem; font-weight: 700; text-align: center; text-transform: uppercase; line-height: 1.88; color: #69696c; cursor: pointer; }
 .button-first:hover { background: #28952b; border-color: #28952b; color: #ffffff; box-shadow: 0 3px #146614; }
+.button-second:hover { background: #ff3d2e; border-color: #ff3d2e; color: #ffffff; box-shadow: 0 3px #c40f00; }
 
 
 /* Index and Page Cover */
